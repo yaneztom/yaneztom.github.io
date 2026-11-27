@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tomás Yáñez · Economía y análisis de datos</title>
+<meta name="description" content="Portfolio de Tomás Yáñez: series de tiempo, econometría y análisis de datos en R, Python, Stata, Power BI y Tableau.">
+<style>
+  :root{
+    --ink:#14213d; --muted:#5b6475; --line:#e3e6ec; --bg:#fbfaf7; --card:#ffffff;
+    --accent:#1F4E79; --warm:#E07B39;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--bg);line-height:1.6}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  a{color:var(--accent)}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  header{padding:72px 0 48px;border-bottom:1px solid var(--line)}
+  .kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--warm);font-weight:600}
+  h1{font-size:clamp(40px,7vw,68px);line-height:1.05;margin:12px 0 18px;font-weight:normal}
+  .lead{font-size:20px;max-width:640px;color:#2b3550}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+  .tags span{font-size:13px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;color:var(--muted)}
+  .links{margin-top:26px;display:flex;gap:18px;font-size:15px}
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:30px;font-weight:normal;margin-bottom:28px}
+  .proj{display:grid;grid-template-columns:1.15fr 1fr;gap:36px;align-items:start;margin-bottom:64px}
+  .proj:last-child{margin-bottom:0}
+  .proj img{width:100%;border-radius:6px;border:1px solid var(--line);background:#fff;display:block}
+  .num{font-size:13px;color:var(--warm);font-weight:600;letter-spacing:.08em}
+  h3{font-size:25px;font-weight:normal;margin:6px 0 10px;line-height:1.25}
+  .proj p{color:#323b52;margin-bottom:12px}
+  .proj ul{font-size:15px;color:var(--muted);padding-left:18px;margin-bottom:14px}
+  .stack{font-size:13px;color:var(--muted);margin-bottom:14px}
+  .btn{display:inline-block;font-size:14px;font-weight:600;text-decoration:none;border:1.5px solid var(--accent);padding:8px 16px;border-radius:4px}
+  .btn:hover{background:var(--accent);color:#fff}
+  .kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px}
+  .kpi b{display:block;font-size:30px;font-weight:normal;color:var(--accent);font-family:Georgia,serif}
+  .kpi small{font-size:13px;color:var(--muted)}
+  .kpi.alert b{color:var(--warm)}
+  .about{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+  .about p{color:#323b52;margin-bottom:12px}
+  footer{padding:36px 0 56px;font-size:14px;color:var(--muted)}
+  @media (max-width:760px){
+    .proj,.about{grid-template-columns:1fr;gap:20px}
+    header{padding:48px 0 36px}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker sans">Economía · Análisis de datos · Riesgo</div>
+    <h1>Tomás Yáñez</h1>
+    <p class="lead">Estudiante de Magíster en Economía Aplicada e Ingeniería Comercial en la Universidad del Desarrollo. Trabajo con series de tiempo, econometría y datos de negocio, con proyección hacia la ciencia actuarial: proyecciones y modelos de riesgo.</p>
+    <div class="tags sans">
+      <span>R</span><span>Python</span><span>Excel</span><span>Stata</span><span>Power BI</span><span>Tableau</span><span>Econometría</span><span>Series de tiempo</span>
+    </div>
+    <div class="links sans">
+      <a href="https://github.com/yaneztom">GitHub</a>
+      <a href="https://www.linkedin.com/in/yaneztomas">LinkedIn</a>
+      <a href="mailto:t.yanezm@udd.cl">Correo</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Proyectos</h2>
+
+    <article class="proj">
+      <img src="img/aceite_serie.png" alt="Gráfico del índice FAO de precios del aceite, 2010–2026">
+      <div>
+        <div class="num sans">01 · R</div>
+        <h3>Precio internacional del aceite (índice FAO)</h3>
+        <p>Serie mensual 2010–2026 del Banco Central de Chile. El código valida la estructura del archivo antes de usarlo, mide la variación en 12 meses en porcentaje (y explica por qué no en puntos) y prueba la estacionalidad con números.</p>
+        <ul>
+          <li>Máximo de 251,8 en marzo de 2022, tras la invasión a Ucrania</li>
+          <li>29 meses seguidos de alza; +16,4% en 12 meses a agosto de 2026</li>
+          <li>Estacionalidad débil: ±3% respecto del promedio anual</li>
+        </ul>
+        <div class="stack sans">R · dplyr · ggplot2 · readxl</div>
+        <a class="btn sans" href="https://github.com/yaneztom/precio-aceite-fao-r">Ver código</a>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div class="kpis sans">
+        <div class="kpi"><b>+24,7%</b><small>crecimiento de ventas 2025</small></div>
+        <div class="kpi"><b>36%</b><small>margen bruto estable</small></div>
+        <div class="kpi"><b>+90%</b><small>Calzado: 82% del crecimiento</small></div>
+        <div class="kpi alert"><b>7,4%</b><small>margen de la Chaqueta impermeable, el producto más vendido</small></div>
+      </div>
+      <div>
+        <div class="num sans">02 · Power BI y Tableau</div>
+        <h3>Caso Cumbre: ventas 2024–2025</h3>
+        <p>Análisis de ventas de una cadena outdoor con cinco sucursales, construido en Power BI y en Tableau. Dashboards de ventas, utilidad y margen por sucursal, categoría y producto, con hallazgos para la gerencia.</p>
+        <ul>
+          <li>Detecté que el producto más vendido se vende bajo su costo cuando tiene descuento</li>
+          <li>Recomendación: subir el precio a ~$172.000 o bajar el costo a ~$120.000 → +$4,5 M de utilidad</li>
+          <li>Aislé una caída puntual de Pucón en abril–junio de 2025 (−36,2%)</li>
+        </ul>
+        <div class="stack sans">Power BI · DAX · Tableau</div>
+        <a class="btn sans" href="https://github.com/yaneztom/caso-cumbre-ventas">Ver proyecto</a>
+      </div>
+    </article>
+
+    <article class="proj">
+      <img src="img/brl_clp.png" alt="Gráfico del tipo de cambio nominal BRL/CLP, 1996–2026">
+      <div>
+        <div class="num sans">03 · Python</div>
+        <h3>Tipo de cambio nominal BRL/CLP</h3>
+        <p>Treinta años de datos diarios del Banco Central de Chile (11.193 observaciones). Exploración, conversión de fechas, imputación de faltantes con media móvil y análisis de los episodios de depreciación del real.</p>
+        <ul>
+          <li>De ~$420 por real en 1996 a un rango de $150–200 en la última década</li>
+          <li>Episodios clave: 1999, 2008–2009, 2014–2016 y 2020</li>
+        </ul>
+        <div class="stack sans">Python · pandas · matplotlib</div>
+        <a class="btn sans" href="https://github.com/yaneztom/tipo-cambio-brl-clp">Ver código</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="wrap about">
+    <div><h2>Sobre mí</h2></div>
+    <div>
+      <p>Curso en paralelo el Magíster en Economía Aplicada (2026–2028) e Ingeniería Comercial en la Universidad del Desarrollo, y soy Licenciado en Ciencias de la Administración de Empresas. Me interesan la macroeconomía, la microeconomía y la econometría, y sigo de cerca las publicaciones del Banco Central de Chile, como el IPoM.</p>
+      <p>Fui consultor económico y socio fundador de Jim Fit &amp; Health, donde diseñé la estrategia de precios a partir de la estructura de costos, llevé la contabilidad y elaboré los estados financieros.</p>
+      <p>Busco una pasantía en fondos de pensiones o compañías de seguros para desarrollarme en análisis financiero y de riesgos.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="sans">
+  <div class="wrap">© 2026 Tomás Yáñez · Hecho con HTML y CSS, publicado en GitHub Pages</div>
+</footer>
+</body>
+</html>
